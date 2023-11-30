@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#bla"  />
+	<title>El Molcajete - Comida Mexicana</title>
+
+
+	<!-- CSS only -->
+	<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous"
+	/><link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style/styles.css" />
+	<link rel="stylesheet" href="style/Style3.css">
+</head>
+<body>
+	<header class="container text-center">
+		<ul
+		class="nav nav-pills mb-3 py-3 container text-center"
+		id="pills-tab"
+		role="tablist"
+
+		>
+		<li class="nav-item text-primary " role="presentation">
+			<a
+			class="nav-link active"
+			id="pills-profile-tab"
+			data-bs-toggle="pill"
+			data-bs-target="#pills-profile"
+			type="button"
+			role="tab"
+			aria-controls="pills-profile"
+			aria-selected="false"
+			>Inicio </a>
+
+
+
+		</li>
+		<li class="nav-item" role="presentation">
+			<a
+			class="nav-link"
+			id="pills-contact-tab"
+			data-bs-toggle="pill"
+			data-bs-target="#pills-contact"
+			type="button"
+			role="tab"
+			aria-controls="pills-contact"
+			aria-selected="false"
+			>Carrito </a>
+
+		</li>
+		<li class="nav-item" role="presentation">
+			<a
+			class="nav-link "
+			id="pills-home-tab"
+			data-bs-toggle="pill"
+			data-bs-target="#pills-home"
+			type="button"
+			role="tab"
+			aria-controls="pills-home"
+			aria-selected="true"
+			>Pedidos</a>
+
+
+		</li>
+		<li class="nav-item" role="presentation">
+			<a
+			class="nav-link "
+			
+			href="CarruselComida.html"
+			>LO MEJOR DE LA CASA</a>
+			
+
+
+		</li>
+	</ul>
+</header>
+
+<div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+	Producto Añadido al carrito!
+</div>
+<div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+	Producto Eliminado!
+</div>
+
+<div class="tab-content" id="pills-tabContent">
+	<div
+	class="tab-pane fade "
+	id="pills-home"
+	role="tabpanel"
+	aria-labelledby="pills-home-tab"
+	>
+	<h1>Pedidos</h1>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="containerpedido">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				
+					<div class="precios">
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	
+</div>
+<div
+class="tab-pane fade show active container"
+id="pills-profile"
+role="tabpanel"
+aria-labelledby="pills-profile-tab"
+>
+<h2 class="h4 m-4 text-primary">Productos</h2>
+
+<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">Chilaquiles</h5>
+			<img src="img/Chilaq.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text  description">Ricos chilaquiles con totilla torteada y frijoles acompañados con crema</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 30</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">Tortas</h5>
+			<img src="img/tortas.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text description">Torta extra grande de jamon con 4 quesos y verduras</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 25</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">Aguachiles</h5>
+			<img src="img/aguas.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text description">rico aguachile con mariscos frescos ylos mejores vegetales de la region servido a su mesa</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 75</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">Enchiladas</h5>
+			<img src="img/enchiladas.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text description">rica orden de enchiladas acompañada con verdura de la mejor calidad y los mejores lacteos</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 20</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1 rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">pozole</h5>
+			<img src="IMG/pozoleRojo.jfif" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text description">Pozole realizado con cabeza de puerco y granos de maiz de la region </p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 52</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">frijoles</h5>
+			<img src="IMG/Frijoles.jfif" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text description">frijoles con carne molida y verdura al estilo picadillo </p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 15</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">sopa azteca</h5>
+			<img src="IMG/sopaAzteca.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text description">sopa de trozos de tortilla acompañada de aguacate, repollo y salsa al gusto</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 25</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">filete de pollo empanzada</h5>
+			<img src="IMG/fileteEmplanizado.jfif" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text description">Filete de pollo empnizado si hueso con verdura</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">Quseadillas</h5>
+			<img src="img/quesadilla.jfif" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text  description">Rica quesadilla extragrande con birria a la salsa</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 30</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">10</h5>
+			<img src="img/Chilaq.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text  description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 30</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">11</h5>
+			<img src="img/polloAlPlancha.jfif" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text  description">pollo a la plancha acompañado con las mejores verduras de la region</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 30</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">12</h5>
+			<img src="img/ArrozConQueso.jfif" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text  description">Arroz cocido con arroz con queso asadareo fundido</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 30</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col d-flex justify-content-center mb-4">
+		<div class="card shadow mb-1  rounded" style="width: 20rem;">
+			<h5 class="card-title pt-2 text-center text-primary">13</h5>
+			<img src="img/chilaquilesVERDES.jfif" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-text  description">chilaquiles con salsa e tomatillo con los mejores lacteos</p>
+				<h5 class="text-primary">Precio: <span class="precio">$ 30</span></h5>
+				<div class="d-grid gap-2">
+					<button  class="btn btn-primary button">Añadir a Carrito</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="container-fluid">
+		
+		<div class="col-12 card-columns" id="productos">
+
+		</div>
+
+	</div>
+
+
+</div>
+</div>
+<div
+class="tab-pane fade carrito"
+id="pills-contact"
+role="tabpanel"
+aria-labelledby="pills-contact-tab"
+>
+<br>
+<table class="table  table-hover">
+	<thead>
+		<tr class="text-primary">
+			<th scope="col">#</th>
+			<th scope="col">Productos</th>
+			<th scope="col">Precio</th>
+			<th scope="col">Cantidad</th>
+		</tr>
+	</thead>
+	<tbody class="tbody">
+
+
+
+	</tbody>
+</table>
+<br><br>
+<div class="row mx-4">
+	<div class="col">
+		<h3 class="itemCartTotal">Total: 0</h3>
+	</div>
+	<div class="col d-flex justify-content-end">
+		<button class="btn btn-success" onclick="comprar()">COMPRAR</button>
+	</div>
+</div>
+
+</div>
+</div>
+
+<footer class="bg-grey p-3 mt-5">
+	<p class="text-center m-0 text-muted">El Molcajete - Comida Mexicana</p>
+</footer>
+
+<script
+src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"
+></script>
+
+
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+crossorigin="anonymous"
+></script>
+<script src="js/scripts.js"></script>
+<script src="js/productos.js"></script>
+</body>
+</html>

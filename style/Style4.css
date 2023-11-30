@@ -1,0 +1,22 @@
+body{
+	background-image: url(../IMG/dondoIndex2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Righteous', cursive;
+	color: #F1C40F;
+}
+
+.nav-link 
+{ 
+	color: #F1C40F;
+}
+
+.nav-item{
+	
+font-family: 'Righteous', cursive;
+display: flex;
+justify-content:space-around;
+padding:0px 440px;
+}
